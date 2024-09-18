@@ -1,0 +1,177 @@
+@font-face {
+    font-family: Norse;
+    src: url(./Norse-Bold.otf);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display:flex;
+    align-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #F9FAFB;;
+}
+
+.LHS{
+    background: url(background.jpg) no-repeat;
+    border: 0;
+    width: 30%;
+    align-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.odinLogoBlock{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    padding:20px;
+    gap:10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: -25vh;
+}
+
+.odinLogoBlock img{
+    height: 100%;
+}
+.odinLogoBlock p{
+    color: white;
+    font-size: 80px;
+    font-family: Norse, Arial, Helvetica, sans-serif;
+}
+
+.LHSImgCredits{
+    display:flex;
+    justify-content: center;
+    position: relative;
+    bottom: -40vh;
+}
+
+.LHSImgCredits p{
+    color: white;
+}
+
+.LHSImgCredits a:visited{
+    color: white;
+}
+
+.LHSImgCredits a:hover{
+    color: rgb(197, 197, 197);
+    transition: 0.5s;
+}
+
+.RHS{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.RHS > div{
+    padding-left: 3rem;
+}
+
+.RHS > div > p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.form{
+    background-color: white;
+    box-shadow: 0rem 0.5rem 0.7rem -0.2rem rgba(0, 0, 0, 0.3);
+}
+
+.heroPara,
+.heroAction,
+.formTitle{
+    font-size: 1.5rem;
+}
+
+.heroPara{
+    margin-top: 8rem;
+}
+
+
+.formEntries{
+    display: flex;
+    justify-content: left;
+    gap: 5rem;
+}
+
+.formEntries div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.formEntries > div{
+    margin-bottom: 2rem;
+}
+
+.formEntries div div label{
+    font-size: 14px;
+}
+
+.required::after{
+    content: " *";
+    color: red;
+    font-weight: bold;
+}
+
+.formEntries div div input{
+    height: 1.8rem;
+    width: 15rem;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+    outline: none;
+    padding-left: 0.8rem;
+    font-size: 16px;
+}
+
+.formEntries div div input:focus{
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 1);
+
+}
+
+.formEntries div div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.formSubmit{
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+}
+
+.formSubmit a{
+    color: #596D48;
+    text-decoration: none;
+}
+
+.formSubmit a:visited{
+    color: #596D48;
+}
+
+.formSubmitButton{
+    cursor: pointer;
+    height: 2.8rem;
+    width: 14rem;
+    background-color: #596D48;
+    color: white;
+    font-size: 16px;
+    border: 0px;
+    border-radius: 0.6rem;
+    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1000px)
+{
+    .LHS{
+        width: 40%;
+    }
+}
+
