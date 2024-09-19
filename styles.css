@@ -113,10 +113,9 @@ body {
     font-size: 14px;
 }
 
-.required::after{
-    content: " *";
+.error{
     color: red;
-    font-weight: bold;
+    font-size: 14px;
 }
 
 .formEntries div div input{
@@ -156,7 +155,7 @@ body {
     color: #596D48;
 }
 
-.formSubmitButton{
+#formSubmitButton{
     cursor: pointer;
     height: 2.8rem;
     width: 14rem;
